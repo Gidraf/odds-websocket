@@ -31,6 +31,7 @@ class SportpesaClient {
 
         this.ws.on('open', () => {
             log("INFO", "✅ Connected & Handshake OK");
+            this.ws.send("40");  
             this.startPing();
             setTimeout(() => this.sendSubscriptions(), 500);
         });
