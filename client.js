@@ -29,10 +29,17 @@ class SportpesaClient {
         log('INFO', "Connecting to Sportpesa...");
         this.ws = new WebSocket(this.wsUrl, { headers: headers });
 
-        this.ws.on('open', () => {
-            log('INFO', "Sportpesa Connection opened");
-            this.isReconnecting = false;
-        });
+       this.ws.on('open', () => {
+    log('INFO', "Sportpesa Connection opened");
+    this.isReconnecting = false;
+
+    // Send subscription **AFTER handshake**
+    setTimeout(() => {
+        const sub = '42["subscribe","buffered-event-105395-194-0.00"]';
+        this.ws.send(sub);
+        log('INFO', `Subscription Sent: ${sub}`);
+    }, 500); // small delay ensures server is ready
+});
 
         this.ws.on('message', (data) => {
             // Convert Buffer to string
