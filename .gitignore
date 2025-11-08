@@ -1,0 +1,73 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+.idea/
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+.yarn/install-state.gz
+
+# testing
+/coverage
+
+# next.js
+/.next/
+/out/
+
+.env
+
+# production
+/build
+
+# misc
+.DS_Store
+*.pem
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# local env files
+.env*.local
+.env.local
+#.env.production
+#.env*.production
+
+# Zone files
+.*:Zone.Identifier
+*:Zone.Identifier
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+
+/public/storybook
+/public/storybook-static
+
+/storybook-static
+logs/
+
+testing/
+
+dummyData/auth.json
+
+Dockerfile.test
+
+scanner.js
+
+.scannerwork/
+
+.sonar-project.properties.local
+
+test.ts
+
+dummyData
+dataStore
+
+dummyData/*
+dataStore/*
