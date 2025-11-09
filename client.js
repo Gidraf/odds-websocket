@@ -21,6 +21,7 @@ class SportpesaClient {
             "buffered-event-109001-194-0.00",
             "buffered-event-109003-194-0.00",
             "buffered-event-109005-194-0.00",
+            "buffered-event-505096-194-0.00",
         ];
     }
 
