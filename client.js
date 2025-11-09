@@ -14,8 +14,13 @@ class SportpesaClient {
 
         // You can add more subscription codes here dynamically later
         this.subscriptions = [
-            "buffered-event-105395-194-0.00", // Example match market
-            // Add more here ⬆️ once we auto-detect live matches
+            "keep-connected",
+            "sport-1",
+            "buffered-event-105395-194-0.00",
+            "buffered-event-108999-194-0.00",
+            "buffered-event-109001-194-0.00",
+            "buffered-event-109003-194-0.00",
+            "buffered-event-109005-194-0.00",
         ];
     }
 
